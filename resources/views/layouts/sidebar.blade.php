@@ -14,14 +14,15 @@
           <i class="bi bi-menu-button-wide"></i><span>ALAT</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-            <a href="components-spinners.html">
-              <i class="bi bi-circle"></i><span>Bahan</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-tooltips.html">
-              <i class="bi bi-circle"></i><span>Iventaris</span>
-            </a>
+            <li>
+                <a href="{{ route('bahan.create') }}">
+                    <i class="bi bi-circle"></i><span>Bahan</span>
+                </a>
+            </li>
+            <li>
+              <a href="{{ route('iventaris.index') }}">
+                  <i class="bi bi-circle"></i><span>Iventaris</span>
+              </a>
           </li>
         </ul>
       </li><!-- End Components Nav -->
@@ -32,15 +33,20 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span>Barang Masuk</span>
+            <a href="{{ route('barangkeluar.keluar') }}">
+                <i class="bi bi-circle"></i><span>Input Data Barang</span>
             </a>
-          </li>
+        </li>
           <li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span>Barang Keluar</span>
+            <a href="{{ route('barangmasuk.masuk') }}">
+                <i class="bi bi-circle"></i><span>Barang Masuk</span>
             </a>
-          </li>
+        </li>
+        <li>
+          <a href="{{ route('barangkeluar.keluar') }}">
+              <i class="bi bi-circle"></i><span>Barang Keluar</span>
+          </a>
+      </li>
         </ul>
       </li><!-- End Forms Nav -->
 
@@ -50,15 +56,14 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span>Peminjaman Untuk Praktik</span>
+            <a href="{{ route('peminjaman.index') }}">
+                <i class="bi bi-circle"></i><span>Peminjaman Untuk Praktik</span>
             </a>
-          </li>
-          <li>
-            <a href="tables-data.html">
+        </li>
+        <li>
+          <a href="{{ route('peminjaman.store') }}">
               <i class="bi bi-circle"></i><span>Peminjaman Untuk Diluar Praktik</span>
-            </a>
-          </li>
+          </a>
         </ul>
       </li><!-- End Tables Nav -->
 
@@ -68,17 +73,16 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>Pengembalian Untuk Praktik</span>
+            <a href="{{ route('pengembalian.index') }}">
+                <i class="bi bi-circle"></i><span>Pengembalian Untuk Praktik</span>
             </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
+        </li>
+        <li>
+          <a href="{{ route('pengembalian.input') }}">
               <i class="bi bi-circle"></i><span>Pengembalian Untuk Diluar Praktik</span>
-            </a>
-          </li>
+          </a>
         </ul>
-      </li><!-- End Charts Nav -->
+      </li><!-- End Tables Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
@@ -86,27 +90,27 @@
         </a>
         <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="icons-bootstrap.html">
+            <a href="{{ route('laporan.kartuAlatRusak') }}">
               <i class="bi bi-circle"></i><span> Kartu Alat Rusak</span>
             </a>
           </li>
           <li>
-            <a href="icons-remix.html">
+            <a href="{{ route('laporan.kartuPerawatan') }}">
               <i class="bi bi-circle"></i><span>Kartu Perawatan</span>
             </a>
           </li>
           <li>
-            <a href="icons-boxicons.html">
+            <a href="{{ route('laporan.kartuInventarisUpdate') }}">
               <i class="bi bi-circle"></i><span>Kartu Iventaris Update</span>
             </a>
           </li>
           <li>
-            <a href="icons-boxicons.html">
+            <a href="{{ route('laporan.kartuStokBahan') }}">
               <i class="bi bi-circle"></i><span>Kartu Stok Bahan</span>
             </a>
           </li>
           <li>
-            <a href="icons-boxicons.html">
+            <a href="{{ route('laporan.beritaAcara') }}">
               <i class="bi bi-circle"></i><span>Berita Acara</span>
             </a>
           </li>
